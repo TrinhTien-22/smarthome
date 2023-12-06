@@ -1,0 +1,115 @@
+:root{
+  --br:red;
+}
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .icon {
+    display: inline-block;
+    padding: 10px 14px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    background-color: #ccc;
+  }
+  
+  .dialog {
+    display: none;
+    position: absolute;
+    width: 200px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .dialog ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dialog li {
+    padding: 8px 16px;
+  }
+  
+  .dialog li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .close {
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+  }
+
+
+
+/* darkmode */
+  /* <div class="switch">
+  <input type="checkbox" id="toggle" name="toggle" class="toggle" />
+  <label for="toggle"></label>
+</div> */
+  body {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  a {
+    color: #fff;
+  }
+  
+  button {
+    background-color: #444;
+    color: #fff;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin: 10px;
+  }
+  
+  .switch input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .switch label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: all 0.3s;
+  }
+  
+  .switch label::before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #444;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  
+  .switch input[type="checkbox"]:checked + label {
+    background-color: #444;
+  }
+  
+  .switch input[type="checkbox"]:checked + label::before {
+    transform: translateX(20px);
+  }
